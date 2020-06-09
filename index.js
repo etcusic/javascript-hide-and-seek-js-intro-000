@@ -1,11 +1,6 @@
 function getFirstSelector(selector){
-  const uls = document.getElementById('app').querySelectorAll('ul')
-
-  for (var i = 0; i < uls.length; i++){
-    if (('.' + uls[i].className) === selector){
-      return document.querySelector(selector)
-    }
-  }
+  const nodes = document.getElementById('app').querySelectorAll(selector)
+  return nodes[0]
 }
 
 function nestedTarget(){
