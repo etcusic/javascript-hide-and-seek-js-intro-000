@@ -1,8 +1,9 @@
 function getFirstSelector(selector){
-  var main = document.getElementsByTagName('main')
-  for (var i = 0; i < main.length; i++){
-    if (main[i] === selector){
-      return main[i]
+  const uls = document.getElementById('app').querySelectorAll('ul')
+
+  for (var i = 0; i < uls.length; i++){
+    if (('.' + uls[i].className) === selector){
+      return document.querySelector(selector)
     }
   }
 }
