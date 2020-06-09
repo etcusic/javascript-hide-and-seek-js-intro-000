@@ -9,7 +9,7 @@ function nestedTarget(){
 
 function deepestChild(){
   const div = document.getElementById("grand-node").querySelectorAll('div')
-  return div[div.length - 1].innerHTML
+  return div[div.length - 1]//.innerHTML
 }
 
 function increaseRankBy(n){
